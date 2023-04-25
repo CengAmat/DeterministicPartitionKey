@@ -44,7 +44,7 @@ Description:
 
 - Update of generateReport function for getting FacilityAgentId data and use that id as well when generating reports for them.
   
-  Estimation: 45h
+  Estimation: 5h
   
   Acceptance Criteria:
 - As a user I want to call generateReport so that I can see new FacilityAgentId values in the generated report.
