@@ -22,7 +22,9 @@ Description:
 - FacilityAgentId column needs to be created in Agents table. It will be nullable. Not every facility will have this data.
 - Refactor Agent Creation functions to have FacilityAgentId field to be able to store in Agents table.
 - Refactor Agent Update functions to have FacilityAgentId field to be able to update in Agents table.
+  
   Estimation: 8h
+  
   Acceptance Criteria:
 - As a user I want to set FacilityAgentId value for each agent in Agent Creation flow so that I can use this data in reports.
 - As a user I want to update FacilityAgentId value for each agent in Update Agent Profile flow so that I can use this data in reports.
@@ -31,7 +33,9 @@ Description:
 Description:
 
 - Update of getShiftsByFacility function so that it returns FacilityAgentId about the Agent assigned to each shift data.
+  
   Estimation: 5h
+  
   Acceptance Criteria:
 - As a user I want to call getShiftsByFacility by FacilityId so that I can see new FacilityAgentId values in the response data which contains all Shifts worked that quarter, including some metadata about the Agent assigned to each.
 
@@ -39,6 +43,8 @@ Description:
 Description:
 
 - Update of generateReport function for getting FacilityAgentId data and use that id as well when generating reports for them.
-  Estimation: 45h
+  
+  Estimation: 5h
+  
   Acceptance Criteria:
 - As a user I want to call generateReport so that I can see new FacilityAgentId values in the generated report.
